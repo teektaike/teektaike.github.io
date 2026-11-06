@@ -65,7 +65,10 @@ h2 { font-size: clamp(30px, 4vw, 46px); font-weight: 900; letter-spacing: -0.8px
 .karten { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .karte { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); border: 1px solid var(--rand);
   border-radius: 24px; padding: 26px; box-shadow: 0 12px 30px rgba(0,0,0,0.35); }
-.karte .zeichen { font-size: 30px; margin-bottom: 12px; }
+.karte .zeichen { width: 46px; height: 46px; margin-bottom: 14px;
+  background: linear-gradient(135deg, var(--akzent1), var(--akzent2));
+  -webkit-mask: var(--symbol) center / contain no-repeat; mask: var(--symbol) center / contain no-repeat; }
+.karte .zeichen.klein { width: 34px; height: 34px; margin-bottom: 10px; }
 .karte h3 { font-size: 19px; margin-bottom: 6px; }
 .karte p { color: var(--leise); font-size: 15.5px; }
 
@@ -79,7 +82,7 @@ h2 { font-size: clamp(30px, 4vw, 46px); font-weight: 900; letter-spacing: -0.8px
 .uhrreihe img { width: 190px; border-radius: 48px; border: 10px solid #2a2c40; background: #000; box-shadow: 0 24px 60px rgba(0,0,0,0.7); }
 .uhrreihe figcaption { color: var(--leise); font-size: 14px; margin-top: 10px; }
 
-.tvliste { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.tvliste { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .status { display: inline-block; font-size: 13px; font-weight: 700; padding: 4px 11px; border-radius: 999px; margin-bottom: 10px; }
 .status.ja { background: rgba(52,199,89,0.16); color: #5be37f; }
 .status.bald { background: rgba(255,159,10,0.16); color: #ffb340; }
