@@ -77,6 +77,11 @@ h2 { font-size: clamp(30px, 4vw, 46px); font-weight: 900; letter-spacing: -0.8px
 .galerie img { width: 100%; border-radius: 30px; border: 6px solid #2a2c40; box-shadow: 0 20px 50px rgba(0,0,0,0.6); }
 .galerie figcaption { color: var(--leise); font-size: 14px; margin-top: 10px; }
 
+.ipadreihe { display: grid; grid-template-columns: 1.78fr 1fr; gap: 24px; align-items: start; }
+.ipadreihe figure { text-align: center; }
+.ipadreihe img { width: 100%; border-radius: 26px; border: 10px solid #2a2c40; background: #000; box-shadow: 0 24px 60px rgba(0,0,0,0.65); }
+.ipadreihe figcaption { color: var(--leise); font-size: 14px; margin-top: 10px; }
+
 .uhrreihe { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
 .uhrreihe figure { text-align: center; }
 .uhrreihe img { width: 190px; border-radius: 48px; border: 10px solid #2a2c40; background: #000; box-shadow: 0 24px 60px rgba(0,0,0,0.7); }
@@ -109,6 +114,8 @@ footer a { color: var(--leise); margin-left: 18px; }
   .geraete { height: 600px; }
   .karten, .tvliste, .schutz { grid-template-columns: 1fr; }
   .galerie { grid-template-columns: repeat(2, 1fr); }
+  .ipadreihe { grid-template-columns: 1fr; }
+  .ipadreihe figure:last-child img { max-width: 420px; }
   nav a { margin-left: 12px; font-size: 14px; }
   .knopf { display: flex; justify-content: center; max-width: 320px; margin: 0 auto; }
   .knopf.still { margin: 12px auto 0; }
